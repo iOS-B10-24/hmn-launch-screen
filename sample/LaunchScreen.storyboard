@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="24q-4p-0Db">
+                                <rect key="frame" x="17.666666666666657" y="0.0" width="404.66666666666674" height="731.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="24q-4p-0Db" secondAttribute="height" multiplier="370:669" id="j8s-OI-9x7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQE-yV-FIx">
+                                <rect key="frame" x="172.33333333333334" y="766.66666666666663" width="95.333333333333343" height="26.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for using my app. This is my first app with custimised launch screen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bud-y1-n5T">
+                                <rect key="frame" x="72" y="801" width="296" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZQE-yV-FIx" firstAttribute="top" secondItem="24q-4p-0Db" secondAttribute="bottom" constant="35" id="0vp-cc-vyN"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="Bud-y1-n5T" secondAttribute="trailing" constant="72" id="0xo-vd-ern"/>
+                            <constraint firstItem="24q-4p-0Db" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.920398" id="270-NU-mCH"/>
+                            <constraint firstItem="24q-4p-0Db" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="9zl-Y9-5Os"/>
+                            <constraint firstItem="24q-4p-0Db" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.765446" id="Y9z-mg-ufP"/>
+                            <constraint firstItem="Bud-y1-n5T" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="72" id="b3q-Iy-PzR"/>
+                            <constraint firstItem="Bud-y1-n5T" firstAttribute="top" secondItem="ZQE-yV-FIx" secondAttribute="bottom" constant="8" symbolic="YES" id="dIZ-Oo-o8X"/>
+                            <constraint firstItem="ZQE-yV-FIx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="owL-cr-wIe"/>
+                            <constraint firstItem="24q-4p-0Db" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vD0-QU-j23"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49.253731343283576" y="372.76887871853546"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchScreen" width="370" height="669"/>
+    </resources>
+</document>
